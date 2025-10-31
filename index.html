@@ -1,67 +1,78 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>SBPJor 2025 — Encontro Nacional de Pesquisadores em Jornalismo</title>
-  <meta name="description" content="23º Encontro Nacional de Pesquisadores em Jornalismo e 15º JPJor — Universidade Estadual de Ponta Grossa." />
-  <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SBPJor 2025 - Guia de Serviços UEPG</title>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
-  <!-- Cabeçalho -->
-  <header class="header">
-    <div class="header-inner">
-      <img src="logo.png" alt="Logo SBPJor" class="logo" />
-      <h1 class="header-title">
-        23° Encontro Nacional de Pesquisadores em Jornalismo<br>
-        <span class="subtitle">15° Encontro de Jovens Pesquisadores em Jornalismo</span>
-      </h1>
-    </div>
-  </header>
 
-  <!-- Hero com imagem da fachada -->
+<header class="main-header">
+  <div class="header-left">
+    <img src="assets/img/logo.png" alt="Logo SBPJor" class="header-logo">
+    <div class="header-text">
+      <h1>SBPJor 2025</h1>
+      <p>23º Encontro Nacional de Pesquisadores em Jornalismo</p>
+      <p>15º Encontro de Jovens Pesquisadores em Jornalismo</p>
+    </div>
+  </div>
+  <div class="header-right">
+    <a href="https://eventos.galoa.com.br/sbpjor-2025/page/6475-noticias?lang=pt-br" target="_blank" class="btn">Mais informações</a>
+    <a href="https://site.sbpjor.org.br/sbpjor-divulga-programacao-final-do-23o-encontro-nacional-e-do-15o-jpjor/" target="_blank" class="btn">Programação</a>
+  </div>
+</header>
+
+
+  <!-- SEÇÃO HERO -->
   <section class="hero">
     <div class="hero-bg"></div>
     <div class="hero-inner">
-      <h2>Sejam bem-vindos!</h2>
-      <p>
-        A Associação Brasileira de Pesquisadores em Jornalismo (SBPJor) realiza o 
-        <strong>23º Encontro Nacional de Pesquisadores em Jornalismo</strong> e o 
-        <strong>15º Encontro de Jovens Pesquisadores em Jornalismo (JPJor)</strong> 
-        na <strong>Universidade Estadual de Ponta Grossa</strong>, de 5 a 7 de novembro de 2025, 
-        com a temática <em>“O Jornalismo diante das desigualdades e conflitos no Sul Global”</em>.
+      <h2 class="hero-title">Sejam bem-vindos!</h2>
+      <p class="hero-sub">
+        A Associação Brasileira de Pesquisadores em Jornalismo (SBPJor) realiza o
+        <strong>23º Encontro Nacional de Pesquisadores em Jornalismo</strong> e o
+        <strong>15º Encontro de Jovens Pesquisadores em Jornalismo (JPJor)</strong> na
+        <strong>Universidade Estadual de Ponta Grossa</strong>, de 5 a 7 de novembro de
+        2025, com a temática
+        <em>“O Jornalismo diante das desigualdades e conflitos no Sul Global”.</em>
       </p>
     </div>
   </section>
 
-  <!-- Texto principal -->
-  <main class="content">
-    <section class="info-card">
+  <!-- CARD SOBRE O EVENTO -->
+  <section class="info-card">
+    <div class="info-card-inner">
+      <span class="info-tag">Sobre o evento</span>
       <p>
-        O 23º Encontro Nacional de Pesquisadores em Jornalismo tem como objetivo reunir 
-        pesquisadores do campo acadêmico do Jornalismo, em diferentes estágios de formação, 
+        O <strong>23º Encontro Nacional de Pesquisadores em Jornalismo</strong> tem como objetivo reunir
+        pesquisadores do campo acadêmico do Jornalismo, em diferentes estágios de formação,
         para promover uma reflexão pluralista sobre os problemas emergentes do campo.
       </p>
-      <p>
-        Mais informações sobre o evento podem ser encontradas em:<br>
-        <a href="https://eventos.galoa.com.br/sbpjor-2025/page/6475-noticias?lang=pt-br" target="_blank">
-          https://eventos.galoa.com.br/sbpjor-2025/page/6475-noticias?lang=pt-br
-        </a>
-      </p>
-      <p>
-        A programação final do evento pode ser consultada em:<br>
-        <a href="https://site.sbpjor.org.br/sbpjor-divulga-programacao-final-do-23o-encontro-nacional-e-do-15o-jpjor/" target="_blank">
-          https://site.sbpjor.org.br/sbpjor-divulga-programacao-final-do-23o-encontro-nacional-e-do-15o-jpjor/
-        </a>
-      </p>
-    </section>
+    </div>
+  </section>
+
+  <!-- GUIA COM MAPAS -->
+  <main class="main-content">
+    <h2 class="section-title">Guia UEPG - Conecotur XIII</h2>
+    <p class="section-sub">Encontre estabelecimentos nas proximidades da Universidade Estadual de Ponta Grossa</p>
+    <p class="section-desc">Serviços e pontos úteis.<br>Toque em um item para abrir o mapa abaixo.</p>
+
+    <div id="mapList" class="map-list"></div>
+
+    <div class="map-container">
+      <iframe id="mapFrame" src="" allowfullscreen loading="lazy"></iframe>
+    </div>
+
+    <p class="program-link">
+      Consulte também as informações oficiais no site da <a href="https://site.sbpjor.org.br/" target="_blank">SBPJor</a>.
+    </p>
   </main>
 
-  <!-- Rodapé -->
   <footer class="footer">
-    © 2025 SBPJor • Universidade Estadual de Ponta Grossa
+    © 2025 Universidade Estadual de Ponta Grossa • SBPJor
   </footer>
+
+  <script src="assets/js/script.js"></script>
 </body>
 </html>

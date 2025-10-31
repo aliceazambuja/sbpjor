@@ -1,0 +1,255 @@
+:root {
+  --green-900:#1d3e30;
+  --green-800:#234d3b;
+  --green-600:#2f6f4f;
+  --green-100:#e9f3ee;
+  --beige:#ffffff;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: var(--green-100);
+  color: #0f172a;
+}
+
+/* HEADER */
+.main-header {
+  background: linear-gradient(180deg, var(--green-800), var(--green-900));
+  color: var(--beige);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  flex-wrap: wrap;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.header-logo {
+  height: 110px;
+  width: auto;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header-text h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+.header-text p {
+  margin: 0;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.header-right {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.btn {
+  background: rgba(255,255,255,0.1);
+  color: var(--beige);
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 999px;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: rgba(255, 255, 255, 0.35);
+  color: var(--green-900);
+  transition: all 0.2s ease-in-out;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-bg {
+  background-image: linear-gradient(to bottom, rgba(29,62,48,0.85), rgba(29,62,48,0.3)), url('../img/fachada-centro.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 55vh;
+}
+
+.hero-inner {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  max-width: 800px;
+}
+
+.hero-title {
+  color: var(--beige);
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.hero-sub {
+  color: var(--beige);
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+/* CARD SOBRE O EVENTO */
+.info-card {
+  background: var(--green-100);
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem 1rem 1rem;
+  margin-bottom: 0;
+}
+
+.info-card-inner {
+  background: #ffffff;
+  color: var(--green-900);
+  max-width: 900px;
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.info-tag {
+  display: inline-block;
+  background: #f5e8c6;
+  color: var(--green-900);
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 0.4rem 0.8rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+/* GUIA E MAPAS */
+.main-content {
+  max-width: 1100px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.section-title {
+  color: var(--green-900);
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.section-sub {
+  color: var(--green-900);
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.section-desc {
+  color: var(--green-900);
+  margin-bottom: 1.5rem;
+}
+
+.map-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.map-list button {
+  border: 1px solid #ccc;
+  background: white;
+  border-radius: 0.8rem;
+  padding: 1rem;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.2s;
+}
+
+.map-list button:hover {
+  background: #f4f7f5;
+}
+
+.map-container {
+  border-radius: 1rem;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  margin-top: 1.5rem;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 65vh;
+  border: 0;
+}
+
+.program-link {
+  margin-top: 1rem;
+  color: var(--green-900);
+  text-align: center;
+}
+
+.program-link a {
+  color: var(--green-600);
+  text-decoration: none;
+}
+
+/* FOOTER */
+.footer {
+  background: var(--green-900);
+  color: var(--beige);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+/* RESPONSIVO */
+/* MOBILE AJUSTADO */
+@media (max-width: 768px) {
+  .main-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0.6rem 0.6rem;
+  }
+
+  .header-left {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.1rem;
+  }
+
+  .header-logo {
+    height: 110px; /* logo um pouco maior no mobile */
+  }
+
+  .header-text h1 {
+    font-size: 2rem;
+  }
+
+  .header-text p {
+    font-size: 0.95rem;
+  }
+
+  .header-right {
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 0.8rem;
+  }
+}
